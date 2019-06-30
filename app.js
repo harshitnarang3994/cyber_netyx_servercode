@@ -39,10 +39,7 @@ routes.setRoutes(routerV1);
 app.use(routerV1);
 
 
-// app.use('/*', function (req, res, next) {
-//   console.log(__dirname);
-// res.sendFile(path.join(__dirname+"/../client/dist/client","index.html"));
-// });
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -18,8 +18,8 @@ module.exports.setRoutes = function(app) {
   });
 
   app.get("/getReminder", (req,res) => {
-	  Reminder.find().sort({createdAt:-1}).then((remonders) => {
-		  res.status(200).json(remonders);
+	  Reminder.find().sort({createdAt:-1}).then((reminders) => {
+		  res.status(200).json(reminders);
 	  }).catch((err) => {
 		  res.status(400).json(err);
 	  })
